@@ -207,7 +207,7 @@ Installation
         - For Apple's Terminal.app on OS X, this means that Text Settings
           should have the `Use bold fonts` checkbox *unselected*.
 
-2.  Obtain solarized-universal.theme
+2.  Obtain `solarized-universal.theme`
 
     a) Option A: Download `solarized-universal.theme` from [irssi-only repository]
        and place it in your `~/.irssi` directory
