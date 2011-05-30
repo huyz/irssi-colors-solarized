@@ -138,13 +138,14 @@ the number of colors visible is minimized when possible. Colors were selected
 based on the characteristics of the text characters to be displayed:
 
 - Visibility generally follows importance, with an attempt to let unimportant
-  text fade into the background (which is not always possible when supporting
-  both dark and light backgrounds)
+  text fade into the background (which is not always possible when
+  simultaneously supporting dark and light backgrounds)
 - Loud colors are chosen to call attention to noteworthy messages
 
 ### Supported Scripts ###
 
 The following third-party scripts are supported:
+
 - [adv\_windowlist.pl](http://anti.teamidiot.de/static/nei/*/Code/Irssi/)
 - [usercount.pl](http://scripts.irssi.org/html/usercount.pl.html)
 - [trackbar.pl](http://scripts.irssi.org/html/trackbar.pl.html)
