@@ -36,7 +36,7 @@ This means that a Solarized terminal application loses the ability to bold text
 but gains 8 more Solarized colors.
 
 About half of the Solarized palette is reminiscent of the original ANSI
-colors, e.g. Solarized red is close to ANSI red (or more precisley, the
+colors, e.g. Solarized red is close to ANSI red (or more precisely, the
 general consensus of what ANSI red should look like).  But the rest of the
 Solarized colors do not correspond to any ANSI colors, e.g. there is no ANSI
 color that corresponds to Solarized orange or purple.
