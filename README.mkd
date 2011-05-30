@@ -126,9 +126,10 @@ read.
 Thus, this theme has been designed with these 4 palettes in mind:
 
 - Solarized Dark: "universal" works best with this scheme
-- Solarized Light: "universal" works almost as well as Solarized Dark (you
-  probably won't notice the difference, but if you do, it could be optimized
-  slightly by switching the theme's use of some of the Solarized base colors)
+- Solarized Light: "universal" works with this scheme almost as well as with
+  Solarized Dark (you probably won't notice the difference, but if you do, it
+  could be optimized slightly by switching the theme's use of some of the
+  Solarized base colors)
 - Default dark-background terminal colors
 - Default light-background terminal colors
 
