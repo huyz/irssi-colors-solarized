@@ -65,8 +65,8 @@ Solarized orange.
 So in order for irssi to display the Solarized palette, you have to set your
 Terminal emulator's color settings to the Solarized palette. The [Solarized
 repository] includes theme settings for some popular terminal emulators as
-well as Xdefaults; or you can download them from the official [Solarized
-homepage]. If you use the irssi themes *without* having changed your
+well as Xdefaults; or you can download them from the official [Solarized]
+homepage. If you use the irssi themes *without* having changed your
 emulator's palette, you will get a strange selection of colors that may be
 hard to read.
 
