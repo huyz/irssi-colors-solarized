@@ -202,10 +202,14 @@ Installation
 
     2.  It's recommended to turn off the display of bold typeface for bold text.  For
         example,
-        - For iTerm on OS X, this means that Text Preferences should have the
+        - For iTerm2 on OS X, this means that Text Preferences should have the
           `Draw bold text in bold font` checkbox *unselected*.
         - For Apple's Terminal.app on OS X, this means that Text Settings
           should have the `Use bold fonts` checkbox *unselected*.
+
+    Example: for iTerm2, these are the correct settings:
+
+    ![iTerm bold settings](https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-iTerm2-bold-options.png)
 
 2.  Obtain `solarized-universal.theme`
 
