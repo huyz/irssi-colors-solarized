@@ -1,7 +1,7 @@
-Solarized Color Theme for irsii
+Solarized Color Theme for irssi
 ===============================
 
-Initially created by Huy Z <huy-git-pub circled-a huyzing.com>, this is a
+Initially created by Huy Z \<huy-git-pub circled-a huyzing.com\>, this is a
 repository of themes for the [irssi] IRC chat client that support the
 [Solarized] color scheme.
 
@@ -26,12 +26,12 @@ terminal emulators will usually display by using the *bright* versions of the 8
 ANSI colors and/or by using a bold typeface with a heavier weight. (Note that
 different terminal emulators may have slightly different ideas of what color
 values to use when displaying the 16 [ANSI color escape
-codes](http://en.wikipedia.org/wiki/ANSI_escape_code#Colors)].)
+codes](http://en.wikipedia.org/wiki/ANSI_escape_code#Colors).)
 
 In order to be displayed by 8-color terminal programs, which cannot specify RGB
 values, Solarized must replace the default ANSI colors.  Since the Solarized
 palette uses 16 colors, not only must this color scheme replace the 8 normal
-colors but must also take over the 8 bright colors, for a total of 16 colors.
+colors but must also take over the 8 *bright* colors, for a total of 16 colors.
 This means that a Solarized terminal application loses the ability to bold text
 but gains 8 more Solarized colors.
 
@@ -46,7 +46,7 @@ Solarized terminal will display something close to green, but if the theme
 wants to display "bold yellow" or "bright yellow", a Solarized terminal will
 not be able to display it.  However, a Solarized theme will be able to display
 the new colors orange and purple and also several shades of gray.  This is
-again thanks to the replacement of the ANSI **bright** colors; e.g. ANSI "bold
+again thanks to the replacement of the ANSI *bright* colors; e.g. ANSI "bold
 red", which is usually displayed as "bright red", will now show as Solarized
 orange, while ANSI "bold blue", which is usually displayed as "bright blue",
 will now be a shade of gray.
@@ -124,6 +124,7 @@ been set up, you won't have elements become invisible or incrediby hard to
 read.
 
 Thus, this theme has been designed with these 4 palettes in mind:
+
 - Solarized Dark: "universal" works best with this scheme
 - Solarized Light: "universal" works almost as well as Solarized Dark (you
   probably won't notice the difference, but if you do, it could be optimized
@@ -135,6 +136,7 @@ This theme was designed to be clean and functional, starting from the default
 theme distributed with irssi.  Colors are strictly used for functionality and
 the number of colors visible is minimized when possible. Colors were selected
 based on the characteristics of the text characters to be displayed:
+
 - Visibility generally follows importance, with an attempt to let unimportant
   text fade into the background (which is not always possible when supporting
   both dark and light backgrounds)
@@ -152,16 +154,20 @@ The following third-party scripts are supported:
 This is how the "universal" theme for irssi looks under different palettes.
 Click images to see screenshots.
 
-Solarized Dark (this example uses iTerm2 on OS X)
+Solarized Dark (this example uses iTerm2 on OS X):
+
 [<img src="https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-irssi-in-iTerm2-solarized_dark-th.png">](https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-irssi-in-iTerm2-solarized_dark.png)
 
-Solarized Light (this example uses iTerm2 on OS X)
+Solarized Light (this example uses iTerm2 on OS X):
+
 [<img src="https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-irssi-in-iTerm2-solarized_light-th.png">](https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-irssi-in-iTerm2-solarized_light.png)
 
-Default dark terminal colors (this example uses Apple's Terminal.app on OS X)
+Default dark terminal colors (this example uses Apple's Terminal.app on OS X):
+
 [<img src="https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-irssi-in-Terminal.app-dark-th.png">](https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-irssi-in-Terminal.app-dark.png)
 
-Default light terminal colors (this example uses iTerm on OS X)
+Default light terminal colors (this example uses iTerm on OS X):
+
 [<img src="https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-irssi-in-iTerm-light-th.png">](https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-irssi-in-iTerm-light.png)
 
 Downloads
@@ -174,10 +180,11 @@ official theme.
 At some point, the [irssi-only repository] may be kept in sync with the main
 [Solarized repository] and would then only be preserved separately for
 installation convenience only. At this time, issues, bug reports, changelogs
-are to be reported at the [irsii-only repository].
+are to be reported at the [irssi-only repository].
 
 [Solarized repository]:  https://github.com/altercation/solarized
-[irsii-only repository]: https://github.com/huyz/irssi-colors-solarized
+[irssi-only repository]: https://github.com/huyz/irssi-colors-solarized
+
 
 Installation
 ------------
@@ -187,22 +194,22 @@ Installation
     Terminals" for an explanation.)
 
     1.  Make sure that bold text is displayed using bright colors. For example,
-        - For iTerm2 on OS X, this means that Text Preferences must have the "Draw
-          bold text in bright colors" checkbox *selected*.
+        - For iTerm2 on OS X, this means that Text Preferences must have the `Draw
+          bold text in bright colors` checkbox *selected*.
         - For Apple's Terminal.app on OS X, this means that Text Settings must
-          have the "Use bright colors for bold text" checkbox *selected*.
+          have the `Use bright colors for bold text` checkbox *selected*.
 
     2.  It's recommended to turn off the display of bold typeface for bold text.  For
         example,
         - For iTerm on OS X, this means that Text Preferences should have the
-          "Draw bold text in bold font" checkbox *unselected*.
+          `Draw bold text in bold font` checkbox *unselected*.
         - For Apple's Terminal.app on OS X, this means that Text Settings
-          should have the "Use bold fonts" checkbox *unselected*.
+          should have the `Use bold fonts` checkbox *unselected*.
 
 2.  Obtain solarized-universal.theme
 
     a) Option A: Download `solarized-universal.theme` from [irssi-only repository]
-       and place it in your ~/.irssi directory
+       and place it in your `~/.irssi` directory
 
     b) Option B: To always have the latest version, clone the git repository:
 
@@ -240,21 +247,23 @@ Installation
 4.  Optionally, if you have the `adv_windowlist.pl` or `trackbar.pl` scripts
     installed, modify your `~/.irssi/config` so that:
 
-    settings = {
-        ...
-        "perl/core/scripts" = {
+        settings = {
             ...
-            ### For Solarized adv_windowlist.pl script
-            awl_display_key_active = "%k%2[$Q=$N:$C]%n";
-            awl_display_nokey_active = "%k%2[$N:$C]%n";
-            awl_display_key = "[$Q:$H$C$S]";
-            awl_display_nokey = "[$N:$H$C$S]";
-    
-            ### For Solarized trackbar.pl script
-            trackbar_style = "%B";
+            "perl/core/scripts" = {
+                ...
+                ### For Solarized adv_windowlist.pl script
+                awl_display_key_active = "%k%2[$Q=$N:$C]%n";
+                awl_display_nokey_active = "%k%2[$N:$C]%n";
+                awl_display_key = "[$Q:$H$C$S]";
+                awl_display_nokey = "[$N:$H$C$S]";
+        
+                ### For Solarized trackbar.pl script
+                trackbar_style = "%B";
+            };
+            ...
         };
-        ...
-    };
+
+
 
 The Solarized Color Values
 --------------------------
