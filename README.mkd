@@ -200,12 +200,17 @@ Installation
         - For Apple's Terminal.app on OS X, this means that Text Settings must
           have the `Use bright colors for bold text` checkbox *selected*.
 
-    2.  It's recommended to turn off the display of bold typeface for bold text.  For
-        example,
+    2.  It's recommended to turn off the display of bold typeface for bold
+        text.  For example,
         - For iTerm2 on OS X, this means that Text Preferences should have the
           `Draw bold text in bold font` checkbox *unselected*.
         - For Apple's Terminal.app on OS X, this means that Text Settings
           should have the `Use bold fonts` checkbox *unselected*.
+        - For XTerm, this may mean setting the `font` and `boldFont` to be the
+          same in your .Xresources or .Xdefaults, e.g.:
+
+            xterm*font: fixed
+            xterm*boldFont: fixed
 
     Example: for iTerm2, these are the correct settings:
 
