@@ -2,8 +2,8 @@ Solarized Color Theme for irssi
 ===============================
 
 Initially created by Huy Z \<huy-git-pub circled-a huyzing.com\>, this is a
-repository of themes for the [irssi] IRC chat client that support the
-[Solarized] color scheme.
+repository of themes for the [irssi] IRC chat client that support Ethan
+Schoonover’s [Solarized] color scheme.
 
 ![Solarized Dark main screenshot](https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-irssi-main-in-iTerm-solarized-dark.png)
 
