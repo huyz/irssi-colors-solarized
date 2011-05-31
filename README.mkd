@@ -27,15 +27,16 @@ you happen to find yourself on a terminal where the Solarized palette has not
 been set up, you won't have elements become invisible or incrediby hard to
 read.
 
-Thus, this theme has been designed with these 4 palettes in mind:
+Thus, this theme was designed with these 4 palettes in mind:
 
--   Solarized Dark: "universal" works best with this scheme
--   Solarized Light: "universal" works with this scheme almost as well as with
-    Solarized Dark (you probably won't notice the difference, but if you do, it
-    could be optimized slightly by switching the theme's use of some of the
-    Solarized base colors)
--   Default dark-background terminal colors
--   Default light-background terminal colors
+-   Solarized Dark: the theme works best when the terminal emulator is
+    set to this scheme
+-   Solarized Light: the theme works, when the terminal emulator is set
+    to this scheme, almost as well as with Solarized Dark (you probably won't
+    notice the difference, but if you do, it could be optimized slightly by
+    switching the theme's use of some of the Solarized base colors)
+-   Default terminal ANSI Colors with a dark background
+-   Default terminal ANSI Colors with a light background
 
 This theme was designed to be clean and functional, starting from the default
 theme distributed with irssi.  Colors are strictly used for functionality and
@@ -83,10 +84,12 @@ If you have come across these themes via the [irssi-only repository] on github,
 you may want to check the main [Solarized repository] to see if there is an
 official theme.
 
-At some point, the [irssi-only repository] may be kept in sync with the main
-[Solarized repository] and would then only be preserved separately for
-installation convenience only. At this time, issues, bug reports, changelogs
-are to be reported at the [irssi-only repository].
+In the future, the [irssi-only repository] may be kept in sync with the main
+[Solarized repository], but the [irssi-only repository] may be left separate
+for installation convenience and to include the latest improvements.
+
+At this time, issues, bug reports, changelogs are to be reported at the
+[irssi-only repository].
 
 [Solarized repository]:  https://github.com/altercation/solarized
 [irssi-only repository]: https://github.com/huyz/irssi-colors-solarized
@@ -230,7 +233,7 @@ Solarized orange.
 So in order for irssi to display the Solarized palette, you have to set your
 Terminal emulator's color settings to the Solarized palette. The [Solarized
 repository] includes theme settings for some popular terminal emulators as
-well as Xdefaults; or you can download them from the official [Solarized]
+well as Xresources; or you can download them from the official [Solarized]
 homepage. If you use the irssi themes *without* having changed your
 emulator's palette, you will get a strange selection of colors that may be
 hard to read.
