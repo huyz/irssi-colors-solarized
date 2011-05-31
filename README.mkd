@@ -127,31 +127,31 @@ read.
 
 Thus, this theme has been designed with these 4 palettes in mind:
 
-- Solarized Dark: "universal" works best with this scheme
-- Solarized Light: "universal" works with this scheme almost as well as with
-  Solarized Dark (you probably won't notice the difference, but if you do, it
-  could be optimized slightly by switching the theme's use of some of the
-  Solarized base colors)
-- Default dark-background terminal colors
-- Default light-background terminal colors
+-   Solarized Dark: "universal" works best with this scheme
+-   Solarized Light: "universal" works with this scheme almost as well as with
+    Solarized Dark (you probably won't notice the difference, but if you do, it
+    could be optimized slightly by switching the theme's use of some of the
+    Solarized base colors)
+-   Default dark-background terminal colors
+-   Default light-background terminal colors
 
 This theme was designed to be clean and functional, starting from the default
 theme distributed with irssi.  Colors are strictly used for functionality and
 the number of colors visible is minimized when possible. Colors were selected
 based on the characteristics of the text characters to be displayed:
 
-- Visibility generally follows importance, with an attempt to let unimportant
-  text fade into the background (which is not always possible when
-  simultaneously supporting dark and light backgrounds)
-- Loud colors are chosen to call attention to noteworthy messages
+-   Visibility generally follows importance, with an attempt to let unimportant
+    text fade into the background (which is not always possible when
+    simultaneously supporting dark and light backgrounds)
+-   Loud colors are chosen to call attention to noteworthy messages
 
 ### Supported Scripts ###
 
 The following third-party scripts are supported:
 
-- [adv\_windowlist.pl](http://anti.teamidiot.de/static/nei/*/Code/Irssi/)
-- [usercount.pl](http://scripts.irssi.org/html/usercount.pl.html)
-- [trackbar.pl](http://scripts.irssi.org/html/trackbar.pl.html)
+-   [adv\_windowlist.pl](http://anti.teamidiot.de/static/nei/*/Code/Irssi/)
+-   [usercount.pl](http://scripts.irssi.org/html/usercount.pl.html)
+-   [trackbar.pl](http://scripts.irssi.org/html/trackbar.pl.html)
 
 ### Screenshots ###
 
@@ -198,19 +198,19 @@ Installation
     Terminals" for an explanation.)
 
     1.  Make sure that bold text is displayed using bright colors. For example,
-        - For iTerm2 on OS X, this means that Text Preferences must have the `Draw
-          bold text in bright colors` checkbox *selected*.
-        - For Apple's Terminal.app on OS X, this means that Text Settings must
-          have the `Use bright colors for bold text` checkbox *selected*.
+        -   For iTerm2 on OS X, this means that Text Preferences must have the `Draw
+            bold text in bright colors` checkbox *selected*.
+        -   For Apple's Terminal.app on OS X, this means that Text Settings must
+            have the `Use bright colors for bold text` checkbox *selected*.
 
     2.  It's recommended to turn off the display of bold typeface for bold
         text.  For example,
-        - For iTerm2 on OS X, this means that Text Preferences should have the
-          `Draw bold text in bold font` checkbox *unselected*.
-        - For Apple's Terminal.app on OS X, this means that Text Settings
-          should have the `Use bold fonts` checkbox *unselected*.
-        - For XTerm, this may mean setting the `font` and `boldFont` to be the
-          same in your .Xresources or .Xdefaults, e.g.:
+        -   For iTerm2 on OS X, this means that Text Preferences should have the
+            `Draw bold text in bold font` checkbox *unselected*.
+        -   For Apple's Terminal.app on OS X, this means that Text Settings
+            should have the `Use bold fonts` checkbox *unselected*.
+        -   For XTerm, this may mean setting the `font` and `boldFont` to be the
+            same in your .Xresources or .Xdefaults, e.g.:
 
                 xterm*font: fixed
                 xterm*boldFont: fixed
