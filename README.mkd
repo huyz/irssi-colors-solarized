@@ -95,17 +95,19 @@ are to be reported at the [irssi-only repository].
 Installation
 ------------
 
-1.  Make sure that you have changed your terminal emulator's color settings to
-    the Solarized palette.  (See the section "Understanding Solarized Colors in
-    Terminals" for an explanation.)
+1.  Configure your terminal emulator (See the section "Understanding Solarized Colors in
+    Terminals" for a detailed explanation behind these settings)
 
-    1.  Make sure that bold text is displayed using bright colors. For example,
+    1.  Make sure that you have changed your terminal emulator's color settings to
+        the Solarized palette.
+
+    2.  Make sure that bold text is displayed using bright colors. For example,
         -   For iTerm2 on OS X, this means that Text Preferences must have the `Draw
             bold text in bright colors` checkbox *selected*.
         -   For Apple's Terminal.app on OS X, this means that Text Settings must
             have the `Use bright colors for bold text` checkbox *selected*.
 
-    2.  It's recommended to turn off the display of bold typeface for bold
+    3.  It's recommended to turn off the display of bold typeface for bold
         text.  For example,
         -   For iTerm2 on OS X, this means that Text Preferences should have the
             `Draw bold text in bold font` checkbox *unselected*.
