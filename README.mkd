@@ -212,8 +212,8 @@ Installation
         - For XTerm, this may mean setting the `font` and `boldFont` to be the
           same in your .Xresources or .Xdefaults, e.g.:
 
-            xterm*font: fixed
-            xterm*boldFont: fixed
+              xterm*font: fixed
+              xterm*boldFont: fixed
 
     Example: for iTerm2, these are the correct settings:
 
