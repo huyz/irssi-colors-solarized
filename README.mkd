@@ -17,104 +17,6 @@ See the [Solarized] homepage for screenshots, details and color theme
 implementations for terminal emulators and other applications, such as Vim,
 Emacs, and Mutt.
 
-Understanding Solarized Colors in Terminals
--------------------------------------------
-
-### Solarized Colors vs. ANSI Colors ###
-
-8-color terminal programs such as irssi use color codes that correspond to the
-expected 8 normal ANSI colors.  irssi additionally supports bold, which
-terminal emulators will usually display by using the *bright* versions of the 8
-ANSI colors and/or by using a bold typeface with a heavier weight. (Note that
-different terminal emulators may have slightly different ideas of what color
-values to use when displaying the 16 [ANSI color escape
-codes](http://en.wikipedia.org/wiki/ANSI_escape_code#Colors).)
-
-In order to be displayed by 8-color terminal programs, which cannot specify RGB
-values, Solarized must replace the default ANSI colors.  Since the Solarized
-palette uses 16 colors, not only must this color scheme replace the 8 normal
-colors but must also take over the 8 *bright* colors, for a total of 16 colors.
-This means that a Solarized terminal application loses the ability to bold text
-but gains 8 more Solarized colors.
-
-About half of the Solarized palette is reminiscent of the original ANSI
-colors, e.g. Solarized red is close to ANSI red (or more precisely, the
-general consensus of what ANSI red should look like).  But the rest of the
-Solarized colors do not correspond to any ANSI colors, e.g. there is no ANSI
-color that corresponds to Solarized orange or purple.
-
-This means that, for example, if the irssi theme wants to display "green", a
-Solarized terminal will display something close to green, but if the theme
-wants to display "bold yellow" or "bright yellow", a Solarized terminal will
-not be able to display it.  However, a Solarized theme will be able to display
-the new colors orange and purple and also several shades of gray.  This is
-again thanks to the replacement of the ANSI *bright* colors; e.g. ANSI "bold
-red", which is usually displayed as "bright red", will now show as Solarized
-orange, while ANSI "bold blue", which is usually displayed as "bright blue",
-will now be a shade of gray.
-
-### Terminal Emulator ###
-
-Because irssi is an ANSI 8-color terminal program, it is entirely dependent on
-the terminal emulator for the display of its colors.  You cannot directly tell
-an irssi theme to display Solarized orange, e.g. by specifying an RGB value.
-Instead, the theme's colors must be chosen using the ANSI color codes with the
-expectation that the terminal emulator will display them as appropriate
-Solarized colors.  For example, the irssi color format `%R` which normally
-would be "bold red" is expected to be displayed by the terminal emulator as
-Solarized orange.
-
-So in order for irssi to display the Solarized palette, you have to set your
-Terminal emulator's color settings to the Solarized palette. The [Solarized
-repository] includes theme settings for some popular terminal emulators as
-well as Xdefaults; or you can download them from the official [Solarized]
-homepage. If you use the irssi themes *without* having changed your
-emulator's palette, you will get a strange selection of colors that may be
-hard to read.
-
-Yes, this means that, to use the Solarized theme for irssi, you need to change
-color settings for not one but two different programs: your terminal emulator
-and irssi.  The two sets of settings will work in concert to display Solarized
-colors appropriately.
-
-### Bold Settings ###
-
-Historically, there has been a one-to-one correspondence between the bolded
-versions of the 8 default ANSI colors and the bright versions of the 8 default
-colors.  Back in the day, when a color program demanded the display of bold
-text, it was probably just easier for terminal emulators to display a brighter
-version of whatever color the text was (and expect the user to interpret that
-as bold) than to display a typeface with a bold weight
-
-Nowadays, it is easy for terminal emulators to display bold typefaces, so it
-doesn't make sense for bolded text to change color, but the confusing
-association remains. In fact, new terminal emulators allow users to break the
-correspondence between bold and bright and can simply change the font.
-
-However, ANSI 8-color terminal applications such as irssi only have a
-conception of bold and don't know about the possibility of using up to 16
-colors.  So to use all 16 Solarized colors, we change the semantics of "bold"
-in the theme to mean that we want to access the 8 new Solarized colors,
-including the grays. Recall the example above, where we described that the
-irssi color format `%R`, which would have normally displayed bold red, is
-expected to show up as Solarized orange.
-
-This is why it is important to *not* break the association between bold and
-bright colors. Many terminal emulators offer an option to disable the use of
-bright colors for bold, and you must not do so.  Often, new users of Solarized
-will be confused when they change their terminal emulator's color palette to
-Solarized but haven't yet installed Solarized-specific color themes for all
-their terminal applications (e.g. mutt, ls's dircolors, irssi, and their
-colorized shell prompts).  They will see texts that are hard to read or
-disappear entirely.  The solution isn't to disable bright colors; the solution
-is to install Solarized color themes for all terminal applications and then you
-will have all 16 colors.
-
-Also, because the semantics of "bold" are lost in favor of more colors, it
-also makes sense to disable the display of bold text as a bold typeface.  It
-won't hurt to see bold typefaces wherever the new 8 Solarized colors are
-displayed but it doesn't make much sense anymore.
-
 Universal theme
 ---------------
 
@@ -276,6 +178,103 @@ Installation
             ...
         };
 
+Understanding Solarized Colors in Terminals
+-------------------------------------------
+
+### Solarized Colors vs. ANSI Colors ###
+
+8-color terminal programs such as irssi use color codes that correspond to the
+expected 8 normal ANSI colors.  irssi additionally supports bold, which
+terminal emulators will usually display by using the *bright* versions of the 8
+ANSI colors and/or by using a bold typeface with a heavier weight. (Note that
+different terminal emulators may have slightly different ideas of what color
+values to use when displaying the 16 [ANSI color escape
+codes](http://en.wikipedia.org/wiki/ANSI_escape_code#Colors).)
+
+In order to be displayed by 8-color terminal programs, which cannot specify RGB
+values, Solarized must replace the default ANSI colors.  Since the Solarized
+palette uses 16 colors, not only must this color scheme replace the 8 normal
+colors but must also take over the 8 *bright* colors, for a total of 16 colors.
+This means that a Solarized terminal application loses the ability to bold text
+but gains 8 more Solarized colors.
+
+About half of the Solarized palette is reminiscent of the original ANSI
+colors, e.g. Solarized red is close to ANSI red (or more precisely, the
+general consensus of what ANSI red should look like).  But the rest of the
+Solarized colors do not correspond to any ANSI colors, e.g. there is no ANSI
+color that corresponds to Solarized orange or purple.
+
+This means that, for example, if the irssi theme wants to display "green", a
+Solarized terminal will display something close to green, but if the theme
+wants to display "bold yellow" or "bright yellow", a Solarized terminal will
+not be able to display it.  However, a Solarized theme will be able to display
+the new colors orange and purple and also several shades of gray.  This is
+again thanks to the replacement of the ANSI *bright* colors; e.g. ANSI "bold
+red", which is usually displayed as "bright red", will now show as Solarized
+orange, while ANSI "bold blue", which is usually displayed as "bright blue",
+will now be a shade of gray.
+
+### Terminal Emulator ###
+
+Because irssi is an ANSI 8-color terminal program, it is entirely dependent on
+the terminal emulator for the display of its colors.  You cannot directly tell
+an irssi theme to display Solarized orange, e.g. by specifying an RGB value.
+Instead, the theme's colors must be chosen using the ANSI color codes with the
+expectation that the terminal emulator will display them as appropriate
+Solarized colors.  For example, the irssi color format `%R` which normally
+would be "bold red" is expected to be displayed by the terminal emulator as
+Solarized orange.
+
+So in order for irssi to display the Solarized palette, you have to set your
+Terminal emulator's color settings to the Solarized palette. The [Solarized
+repository] includes theme settings for some popular terminal emulators as
+well as Xdefaults; or you can download them from the official [Solarized]
+homepage. If you use the irssi themes *without* having changed your
+emulator's palette, you will get a strange selection of colors that may be
+hard to read.
+
+Yes, this means that, to use the Solarized theme for irssi, you need to change
+color settings for not one but two different programs: your terminal emulator
+and irssi.  The two sets of settings will work in concert to display Solarized
+colors appropriately.
+
+### Bold Settings ###
+
+Historically, there has been a one-to-one correspondence between the bolded
+versions of the 8 default ANSI colors and the bright versions of the 8 default
+colors.  Back in the day, when a color program demanded the display of bold
+text, it was probably just easier for terminal emulators to display a brighter
+version of whatever color the text was (and expect the user to interpret that
+as bold) than to display a typeface with a bold weight
+
+Nowadays, it is easy for terminal emulators to display bold typefaces, so it
+doesn't make sense for bolded text to change color, but the confusing
+association remains. In fact, new terminal emulators allow users to break the
+correspondence between bold and bright and can simply change the font.
+
+However, ANSI 8-color terminal applications such as irssi only have a
+conception of bold and don't know about the possibility of using up to 16
+colors.  So to use all 16 Solarized colors, we change the semantics of "bold"
+in the theme to mean that we want to access the 8 new Solarized colors,
+including the grays. Recall the example above, where we described that the
+irssi color format `%R`, which would have normally displayed bold red, is
+expected to show up as Solarized orange.
+
+This is why it is important to *not* break the association between bold and
+bright colors. Many terminal emulators offer an option to disable the use of
+bright colors for bold, and you must not do so.  Often, new users of Solarized
+will be confused when they change their terminal emulator's color palette to
+Solarized but haven't yet installed Solarized-specific color themes for all
+their terminal applications (e.g. mutt, ls's dircolors, irssi, and their
+colorized shell prompts).  They will see texts that are hard to read or
+disappear entirely.  The solution isn't to disable bright colors; the solution
+is to install Solarized color themes for all terminal applications and then you
+will have all 16 colors.
+
+Also, because the semantics of "bold" are lost in favor of more colors, it
+also makes sense to disable the display of bold text as a bold typeface.  It
+won't hurt to see bold typefaces wherever the new 8 Solarized colors are
+displayed but it doesn't make much sense anymore.
 
 
 The Solarized Color Values
