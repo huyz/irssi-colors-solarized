@@ -5,6 +5,8 @@ Initially created by Huy Z \<huy-git-pub circled-a huyzing.com\>, this is a
 repository of themes for the [irssi] IRC chat client that support the
 [Solarized] color scheme.
 
+![Solarized Dark main screenshot](https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-irssi-main-in-iTerm-solarized-dark.png)
+
 [irssi]:                http://www.irssi.org/
 [Solarized]:            http://ethanschoonover.com/solarized
 
@@ -158,19 +160,19 @@ Click images to see screenshots.
 
 Solarized Dark (this example uses iTerm2 on OS X):
 
-[<img src="https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-irssi-in-iTerm2-solarized_dark-th.png">](https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-irssi-in-iTerm2-solarized_dark.png)
+[![Solarized Dark](https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-irssi-in-iTerm2-solarized_dark-th.png)](https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-irssi-in-iTerm2-solarized\_dark.png)
 
 Solarized Light (this example uses iTerm2 on OS X):
 
-[<img src="https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-irssi-in-iTerm2-solarized_light-th.png">](https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-irssi-in-iTerm2-solarized_light.png)
+[![Solarized Light](https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-irssi-in-iTerm2-solarized_light-th.png)](https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-irssi-in-iTerm2-solarized\_light.png)
 
 Default dark terminal colors (this example uses Apple's Terminal.app on OS X):
 
-[<img src="https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-irssi-in-Terminal.app-dark-th.png">](https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-irssi-in-Terminal.app-dark.png)
+[![default dark](https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-irssi-in-Terminal.app-dark-th.png)](https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-irssi-in-Terminal.app-dark.png)
 
 Default light terminal colors (this example uses iTerm on OS X):
 
-[<img src="https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-irssi-in-iTerm-light-th.png">](https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-irssi-in-iTerm-light.png)
+[![default light](https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-irssi-in-iTerm-light-th.png)](https://github.com/huyz/irssi-colors-solarized/raw/master/img/screen-irssi-in-iTerm-light.png)
 
 Downloads
 ---------
