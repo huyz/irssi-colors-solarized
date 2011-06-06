@@ -288,7 +288,7 @@ abstracts = {
   #   the content parts of the adv_windowlist.  Default seems to be blue
   # NOTE: if not set, the default background seems to be %w%4 = white on blue
   # %4 = blue
-  sb_background = "%w%4";
+  sb_background = "%k%6";
 
   # default backround for "default" statusbar group
   # NOTE: this impacts the statusbar of an inactive window and the edges of adv_windowlist
@@ -339,7 +339,7 @@ abstracts = {
   sb_act_sep = "%g$*";
   # normal text
   # This also affects the color of the window with activity in adv_windowlist
-  sb_act_text = "%W$*";
+  sb_act_text = "%w$*";
   # public message (ordinary messages)
   sb_act_msg = "%R$*";
   # hilight (when people actually chat)
