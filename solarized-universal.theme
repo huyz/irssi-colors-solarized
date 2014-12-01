@@ -72,7 +72,7 @@ abstracts = {
   # text to insert at the beginning of each non-message line
   # %G = brightgreen (Solarized: base01, i.e. darkest gray)
   # %| probably right-aligns
-  line_start = " %G-!- ";
+  line_start = " %G-!-%n ";
 
   # timestamp styling, nothing by default
   # %Y = brightyellow (Solarized: base00, i.e. 2nd darkest gray)
@@ -154,7 +154,7 @@ abstracts = {
   #  privmsgnick = "%K{msgnick  %R$*%K}%n";
 
   # $0 = nick mode, $1 = nick
-  ownmsgnick = "{msgnick $0 $1-}%b";
+  ownmsgnick = "{msgnick $0 $1-}";
   ownnick = "%b$*%n";
 
   # public message in channel, $0 = nick mode, $1 = nick
@@ -186,12 +186,12 @@ abstracts = {
   ownprivmsg = "[%b$0%G<%B$1-%G>%n] ";
 
   # own private message in query
-  ownprivmsgnick = "{msgnick  $*}%b";
+  ownprivmsgnick = "{msgnick  $*}";
   ownprivnick = "%b$*%n";
 
   # private message in query
   # NOTE: for some reason, we gotta handle both the nick & msg on in this line
-  privmsgnick = "{msgnick  %m$*%n}%m";
+  privmsgnick = "{msgnick  %m$*%n}";
 
   ##
   ## Actions (/ME stuff)
